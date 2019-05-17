@@ -1,0 +1,31 @@
+1. PERT and CPM
+2. State Space Search Problem
+3. Any Variation of B Tree
+4. Splay Tree
+5. Trie
+6. Infinite Precision Arithmetic
+7. Menu Generation
+8. Data Structure - Set
+9. Data Structure - Map (dict)
+10. Min-Max Tree
+11. Make Tool
+12. Version Control Tool
+13. Regular Expression Engine
+14. External Sorting
+15. Binary Counter (Stepanov)
+16. NFA to DFA
+17. Matrix Library
+18. Statistical Library
+19. Vector Library
+20. Parallel Algorithm for Sorting
+21. Any Variation of Height Balanced Binary Search Tree (AVL, Red-Black)
+22. Implement a Spell Checker
+23. Implement a Sudoku Solver
+24. Implement a Toy Search Engine
+25. A Library of Graph Algorithms - Dijkstra, Bellman - Ford, Johnson, Floyd Warshall, A* Search, DFS - BFS, Prim's, Kruskal's....
+26. String Matching Algorithm Library - Naive, Horspool, Boyer - Moore, Rabin Karp, Knuth Morris Pratt
+27. Several Versions of Convex Hull Algorithms
+28. A Library of Cryptographic Algorithms
+29. Clustering Algorithm Library
+30. Dynamic Programming Library
+

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int valid(int sudoku[9][9], int r, int c, int num);
 int solve(int sudoku[9][9], int r, int c);
@@ -16,7 +17,8 @@ int solve(int sudoku[9][9], int r, int c) {
 		if (c + 1 < 9) return solve(sudoku, r, c + 1);
 		else if (r + 1 < 9) return solve(sudoku, r + 1, 0);
 		else return 1;
-	} else {
+	}
+	else {
 		for (int i = 0; i < 9; i++) {
 			if (valid(sudoku, r, c, i + 1)) {
 				sudoku[r][c] = i + 1;
@@ -42,9 +44,10 @@ void print(int sudoku[9][9]) {
 	}
 }
 
-int main(int argc, char const* argv[]) {
+int main(int argc, char const *argv[]) {
 	int sudoku[9][9];
-	FILE* f = fopen(argv[1], "r");
+	if (argc < 2) { printf("Enter valid filename\n"); exit(1); }
+	FILE *f = fopen(argv[1], "r");
 	for (int i = 0; i < 9; i++) for (int j = 0; j < 9; j++) fscanf(f, "%d", &sudoku[i][j]);
 	fclose(f);
 	print(sudoku);

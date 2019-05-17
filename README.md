@@ -45,7 +45,11 @@ return 0 // No solution found
 
 #### Usage (C only for 9x9)- `gcc SOLVER.c -o sudoku; ./sudoku inp1.txt`
 
-#### Usage (Python for any N<sup>2</sup>xN<sup>2</sup>)- `python3 SOLVER.py inp6-4.txt`
+#### Usage (Python for 2x2, 3x3, 4x4)- `python3 SOLVER.py inp6-4.txt`
+
+Input file needs to have space separated values, and 0 for empty cells
+
+One row per line
 
 Sample Input Files with
 * -4 suffix are hexadokus (16x16) (1-10, instead of standard 0-F, as 0 is used for empty cell)

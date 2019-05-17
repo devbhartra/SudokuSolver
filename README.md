@@ -1,6 +1,6 @@
 # SudokuSolver
 
-## A C and Python Implementation Using Backtracking
+## C and Python Implementations Using Backtracking
 ## By [Dev Bhartra](https://github.com/devbhartra) and [Sarthak Gupta](https://github.com/sarthak7gupta)
 
 ### _Abstract_:

@@ -1,8 +1,7 @@
 from sys import argv; from math import sqrt
+if len(argv) < 2: print("Enter Valid Filename"); quit()
 try: f = open(argv[1], "r")
-except FileNotFoundError as e:
-	print("Enter Valid Filename")
-	quit()
+except FileNotFoundError as e: print("Enter Valid Filename"); quit()
 sudoku = [[int(i, 16) for i in x.split()] for x in f]
 f.close()
 N = len(sudoku[0]); n = int(sqrt(N)); s = "\n" + ("+ " + ("- " * n)) * n + "+"

@@ -30,29 +30,32 @@ Algorithm SolveSudoku
     Output: 1, with lexicographically first solution of the Sudoku in S, if a solution exists, else 0
 
 if R > 9 and C > 9, return 1 // No cells left, sudoku is solved
+
 if S(R, C) is filled, then // Try next cell
-if C <= 9, return SolveSudoku(S, R, C + 1) // Move to next column
+    if C <= 9, return SolveSudoku(S, R, C + 1) // Move to next column
     else if R <= 9, return SolveSudoku(S, R + 1, 0) // Row over, move to next row
     else return 1 // No cells left, sudoku is solved
+
 else // R, C is yet to be filled
     for i ← 1 to 9, do: // Try every number
         if i is not already present in the same row, column, or sub-matrix as R, C in S, then // i is a valid entry
             fill i into S(R, C) // Try solving
             if SolveSudoku(S, R, C), return 1 // Solution is possible from here
             else reset S(R, C) to empty // Backtrack
+
 return 0 // No solution found
 ~~~~
 
 #### Usage (C only for 9x9)- `gcc SOLVER.c -o sudoku; ./sudoku inp1.txt`
 
-#### Usage (Python for 2x2, 3x3, 4x4)- `python3 SOLVER.py inp6-4.txt`
+#### Usage (Python for 2x2, 3x3, 4x4)- `python(3) SOLVER.py inp1.txt 0/1 {1 for solution with steps. 0 for only final solution}`
 
 Input file needs to have space separated values, and 0 for empty cells
 
 One row per line
 
 Sample Input Files with
-* -4 suffix are hexadokus (16x16) (1-10, instead of standard 0-F, as 0 is used for empty cell)
+* -H suffix are hexadokus (16x16) (1-10, instead of standard 0-F, as 0 is used for empty cell)
 * -2 suffix are quadokus (4x4)
 * Rest are standard sudokus (9x9)
 * Other sample inputs in inps.txt, can be created to multiple files as needed

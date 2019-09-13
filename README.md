@@ -46,7 +46,7 @@ else // R, C is yet to be filled
 return 0 // No solution found
 ~~~~
 
-#### Usage (C only for 9x9)- `gcc SOLVER.c -o sudoku; ./sudoku inp1.txt`
+#### Usage (C only for 9x9)- `gcc SOLVER.c -o sudoku && ./sudoku inp1.txt`
 
 #### Usage (Python for 2x2, 3x3, 4x4)- `python(3) SOLVER.py inp1.txt 0/1 {1 for solution with steps. 0 for only final solution}`
 
